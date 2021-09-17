@@ -28,4 +28,4 @@ function printerError(s) {
   return `${numerator}/${denominator}`
 }
 
-/////////////
+//////////////
