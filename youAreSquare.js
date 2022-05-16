@@ -10,6 +10,4 @@ var isSquare = function(n){
     else{
       return true;
     }
-    
-    
   }
