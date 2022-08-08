@@ -36,3 +36,18 @@ function maxMultiple(divisor, bound){
     //return the largest divisor by removing the last element in the array
     return divisors.pop();
   }
+
+  //easier solutions
+
+  function maxMultiple(divisor, bound){
+    return bound-bound%divisor
+  }
+
+  const maxMultiple = (divisor,bound) => bound - bound % divisor ;
+  function maxMultiple(divisor, bound) {
+    while (bound % divisor) {
+      bound--;
+    }
+    
+    return bound;
+  }
