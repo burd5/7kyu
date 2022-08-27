@@ -32,3 +32,22 @@ function swapVowelCase(str) {
     }
     return newStr;
   }
+
+  //Other solution
+
+  function swapVowelCase(str) {
+    return str.replace(/[aeiou]/ig, x => /[AEIOU]/.test(x) ? x.toLowerCase() : x.toUpperCase())
+  }
+
+  //
+
+  function swapVowelCase(str) {
+    const swapCase = l => l === l.toLowerCase() ? l.toUpperCase() : l.toLowerCase();
+    return str
+      .split('')
+      .map(l => "aeouiAEOUI".includes(l) ? swapCase(l) : l)
+      .join('');
+  }
+  
+
+  ////
