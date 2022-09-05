@@ -8,4 +8,4 @@ arrMultiply(['9','6']) should return '54'
 function arrMultiply(arr){
     return String(arr[0] * arr[1]);
  }
- //
+ 
