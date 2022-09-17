@@ -34,4 +34,4 @@ function adjacentElementsProduct(array) {
     return Math.max(...newArr)
   }
   
-  //
+  ////
